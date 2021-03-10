@@ -1,0 +1,37 @@
+body {
+  font-family: "Raleway", sans-serif;
+  font-family: "Roboto", sans-serif;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  margin: 0;
+}
+
+img {
+  display: block;
+}
+
+.list {
+  list-style-type: none; /* Убираем маркеры */
+}
+
+.link {
+  text-decoration: none;
+}
+
+ul {
+  margin-left: 0; /* Отступ слева в браузере IE и Opera */
+  padding-left: 0; /* Отступ слева в браузере Firefox, Safari, Chrome */
+}
+
+a:not(.logo):hover,
+a:not(.logo):focus {
+  color: #2196f3;
+  fill: #2196f3;
+}

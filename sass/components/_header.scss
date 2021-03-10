@@ -1,0 +1,131 @@
+.page-header {
+  padding-top: 24px;
+  padding-bottom: 25px;
+  border-bottom: 1px solid #ececec;
+  & .container {
+    display: flex;
+    align-items: center;
+  }
+}
+
+// .page-header .container {
+//   display: flex;
+//   align-items: center;
+// }
+
+.nav {
+  display: flex;
+  align-items: center;
+  &__list {
+    display: flex;
+    align-items: center;
+    margin-left: 93px;
+  }
+  &__item:not(:last-child) {
+    margin-right: 50px;
+  }
+  &__link {
+    position: relative;
+  }
+  &__link.active::after {
+    position: absolute;
+    bottom: -42px;
+    content: "";
+    display: block;
+
+    background: currentColor;
+    border-radius: 2px;
+    height: 4px;
+    width: 100%;
+  }
+  &__link::after {
+    position: absolute;
+    bottom: -42px;
+    content: "";
+
+    display: block;
+
+    background: transparent;
+    border-radius: 2px;
+    height: 4px;
+    width: 100%;
+
+    transition-property: background-color;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  }
+  &__link:hover:after,
+  &__link:focus:after {
+    opacity: 1;
+    background: #2196f3;
+  }
+  &__link {
+    text-decoration: none;
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 1.142;
+    letter-spacing: 0.02em;
+
+    color: #212121;
+
+    transition-property: color;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  }
+}
+
+.active {
+  color: #2196f3;
+}
+
+// Проуерить или работает, фокус должен работать на всех ссылках
+// .nav-list-link:hover,
+// .nav-list-link:focus {
+//   color: #2196f3;
+// }
+
+.contacts-list-link {
+  text-decoration: none;
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.142;
+  letter-spacing: 0.02em;
+
+  color: #757575;
+
+  display: flex;
+  align-items: center;
+
+  transition-property: color;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+
+  &__svg-mail {
+    width: 16px;
+    height: 12px;
+    margin-right: 10px;
+    margin-left: auto;
+    fill: currentColor;
+  }
+
+  &__svg-phone {
+    margin-right: 10px;
+
+    fill: currentColor;
+    width: 10px;
+    height: 16px;
+  }
+
+  &--tel {
+    margin-left: 50px;
+    margin-right: 0px;
+  }
+
+  &--mail {
+    margin-left: auto;
+  }
+}

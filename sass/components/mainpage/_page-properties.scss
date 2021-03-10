@@ -1,0 +1,50 @@
+.page-properties {
+  padding-top: 94px;
+  padding-bottom: 94px;
+
+  &__svg {
+    width: 65px;
+    height: 70px;
+    margin: 25px 102px;
+  }
+  &__box {
+    background: #f5f4fa;
+    border-radius: 4px;
+    margin-bottom: 30px;
+  }
+
+  &__list {
+    display: flex;
+    margin: -15px;
+  }
+
+  &__item {
+    margin: 15px;
+    width: 270px;
+  }
+  &__tittle {
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 14px;
+    line-height: 1.142;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+
+    color: #212121;
+    margin-bottom: 10px;
+  }
+
+  &__desc {
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 1.714;
+    /* or 171% */
+
+    letter-spacing: 0.03em;
+
+    color: #757575;
+  }
+}
