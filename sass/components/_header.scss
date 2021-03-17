@@ -29,7 +29,7 @@
   }
   &__link.active::after {
     position: absolute;
-    bottom: -42px;
+    bottom: -32px;
     content: "";
     display: block;
 
@@ -40,7 +40,7 @@
   }
   &__link::after {
     position: absolute;
-    bottom: -42px;
+    bottom: -32px;
     content: "";
 
     display: block;

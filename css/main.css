@@ -416,7 +416,7 @@ a:not(.logo):focus {
 
 .nav__link.active::after {
   position: absolute;
-  bottom: -42px;
+  bottom: -32px;
   content: "";
   display: block;
   background: currentColor;
@@ -427,7 +427,7 @@ a:not(.logo):focus {
 
 .nav__link::after {
   position: absolute;
-  bottom: -42px;
+  bottom: -32px;
   content: "";
   display: block;
   background: transparent;
@@ -581,6 +581,7 @@ a:not(.logo):focus {
   letter-spacing: 0.03em;
   text-transform: uppercase;
   color: #ffffff;
+  margin-bottom: 20px;
 }
 
 .page-footer__right-side {
@@ -769,8 +770,8 @@ a:not(.logo):focus {
   margin: 0 auto;
   max-width: 1600px;
   background: #c4c4c4;
-  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url(../../../images/hero.jpg);
-  background-image: linear-gradient(to bottom, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../../../images/hero.jpg);
+  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url(../images/hero.jpg);
+  background-image: linear-gradient(to bottom, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/hero.jpg);
   height: 600px;
   background-repeat: no-repeat;
   background-position-x: center;
